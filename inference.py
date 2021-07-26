@@ -8,7 +8,7 @@ from transformers import (
 
 class BERT_NER_inference(object):
 
-    def __init__(self, model_path: str = "./pretrained_models/bert_ner_model.bin"):
+    def __init__(self, model_path: str = "./finetuned_models/bert_ner_model.bin"):
 
         self.device = torch.device("cpu") # load model onto CPU for inference
         self.tokenizer = self.get_tokenizer()
