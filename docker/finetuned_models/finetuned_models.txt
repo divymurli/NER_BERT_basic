@@ -1,1 +1,1 @@
-put your finetuned models here
+put your finetuned model in this directory
