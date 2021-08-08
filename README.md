@@ -21,3 +21,6 @@ Once the models are in the correct places, you can simply perform inference on y
 }
 ```
 
+## Deployment
+
+Assuming you have the model loaded into the correct place in the `docker/` directory, I've written a [tutorial](https://divymurli.github.io/guides.html) on how to deploy a model with Docker and AWS.
