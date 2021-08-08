@@ -14,9 +14,10 @@ This repo contains a bare-bones deployment of a named entity recognition model (
 Once the models are in the correct places, you can simply perform inference on your local computer (make sure you load the dependencies specified in `environment.yml`). The example text specified there outputs (upon running `python inference.py`):
 
 ```
-{'extracted_entities': "[('Divy', 'B-per'), ('Murli', 'I-per'), ('United', 'B-geo'), ('States', 'I-geo'), ('UCSB', 'B-org'), ('June', 'B-tim'), ('2014', 'I-tim'), ('6pm', 'B-tim')]", 
-'BERT_tokenized': ['[CLS]', 'Di', '##vy', 'Mu', '##rl', '##i', 'lives', 'in', 'the', 'United', 'States', 'and', 'went', 'to', 'college', 'at', 'UC', '##SB', 'in', 'June', '2014', 'at', '6', '##pm', '.', '[SEP]'], 
-'predicted_labels': ['O', 'B-per', 'B-per', 'I-per', 'I-per', 'I-per', 'O', 'O', 'O', 'B-geo', 'I-geo', 'O', 'O', 'O', 'O', 'O', 'B-org', 'B-org', 'O', 'B-tim', 'I-tim', 'O', 'B-tim', 'I-tim', 'O', 'O']}
-
+{
+	'extracted_entities': "[('Divy', 'B-per'), ('Murli', 'I-per'), ('United', 'B-geo'), ('States', 'I-geo'), ('UCSB', 'B-org'), ('June', 'B-tim'), ('2014', 'I-tim'), ('6pm', 'B-tim')]", 
+	'BERT_tokenized': ['[CLS]', 'Di', '##vy', 'Mu', '##rl', '##i', 'lives', 'in', 'the', 'United', 'States', 'and', 'went', 'to', 'college', 'at', 'UC', '##SB', 'in', 'June', '2014', 'at', '6', '##pm', '.', '[SEP]'], 
+	'predicted_labels': ['O', 'B-per', 'B-per', 'I-per', 'I-per', 'I-per', 'O', 'O', 'O', 'B-geo', 'I-geo', 'O', 'O', 'O', 'O', 'O', 'B-org', 'B-org', 'O', 'B-tim', 'I-tim', 'O', 'B-tim', 'I-tim', 'O', 'O']
+}
 ```
 
